@@ -39,7 +39,6 @@ recipe:
              vcf_url=${url_prefix}${vcf}
              vcf_local=`basename $vcf_url`
              
-             let get_vcf=$get_vcf+1
              wget -c $vcf_url
              wget -c $vcf_url.tbi
              
